@@ -1,4 +1,4 @@
-# URL pública del proyecto: https://jidpruebas.github.io/cocinandocongit_g1.github.io/
+## URL pública del proyecto: https://jidpruebas.github.io/cocinandocongit_g1.github.io/
 
 ## Objetivo
 
