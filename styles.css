@@ -1,0 +1,46 @@
+.titulo-banner {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Sección de recetas */
+.recetas-caseras {
+    background: #ffffff;
+}
+
+/* Estilos de las cards */
+.card {
+    border-radius: 10px;
+    transition: 0.3s;
+    height: 100%; /* Asegura que todas las cards ocupen la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegurar que el contenido dentro de la card sea uniforme */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye los elementos */
+    flex-grow: 1; /* Hace que el contenido crezca de forma uniforme */
+}
+
+/* Fijar altura para el título y la descripción */
+.card-title {
+    min-height: 50px;
+}
+
+.card-text {
+    min-height: 60px;
+}
+
+/* Botón en la parte inferior */
+.btn-warning {
+    background: #ff9800;
+    border: none;
+    margin-top: auto; /* Empuja el botón hacia abajo */
+}
+
+.btn-warning:hover {
+    background: #e68900;
+}

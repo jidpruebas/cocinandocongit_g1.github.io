@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocinando con Git</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Banner -->
+    <header class="banner text-center py-5">
+        <div class="container">
+            <h1 class="titulo-banner">🍽️ Cocinando con Git</h1>
+            <p>Las mejores recetas caseras, fáciles y deliciosas</p>
+        </div>
+    </header>
+
+    <!-- Sección de Recetas Caseras -->
+    <section class="recetas-caseras py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">🔥 Recetas Caseras</h2>
+            <div class="row">
+                <script>
+                    const recetas = [
+                        { titulo: "Brownies Caseros", img: "ff5733", link: "recetas/brownies.html" },
+                        { titulo: "Pizza Casera", img: "4caf50", link: "recetas/pizza.html" },
+                        { titulo: "Hamburguesa", img: "2196f3", link: "recetas/hamburguesa.html" },
+                        { titulo: "Arroz con Pollo", img: "e91e63", link: "recetas/arroz.html" },
+                        { titulo: "Ajiaco", img: "ff9800", link: "recetas/ajiaco.html" },
+                        { titulo: "Pandebono", img: "795548", link: "recetas/pandebonos.html" },
+                        { titulo: "Buñuelos", img: "009688", link: "recetas/bunuelos.html" },
+                        { titulo: "Empanadas", img: "8bc34a", link: "recetas/empanadas.html" },
+                        { titulo: "Arepas", img: "ffeb3b", link: "recetas/arepas.html" },
+                        { titulo: "Batido de Fresas", img: "f44336", link: "recetas/batido.html" },
+                        { titulo: "Galletas de Chocolate", img: "9c27b0", link: "recetas/galletas.html" },
+                        { titulo: "Pollo relleno", img: "3f51b5", link: "recetas/pollo.html" },
+                        { titulo: "Pastas Alfredo con Pollo", img: "ff5733", link: "recetas/pastas.html" },
+                        { titulo: "Ensalada César", img: "4caf50", link: "recetas/ensalada.html" },
+                        { titulo: "Tacos Mexicanos", img: "2196f3", link: "recetas/tacos.html" },
+                        { titulo: "Frijoles", img: "e91e63", link: "recetas/frijoles.html" },
+                        { titulo: "Arroz Chino", img: "ff9800", link: "recetas/arroz.html" },  
+                        { titulo: "Lasaña de Pollo", img: "795548", link: "recetas/lasana.html" },
+                        { titulo: "Crepes Dulces", img: "009688", link: "recetas/crepes.html" },
+                        { titulo: "Pollo a la Naranja", img: "8bc34a", link: "recetas/pollonaranja.html" },
+                        { titulo: "Arroz de leche", img: "ffeb3b", link: "recetas/arrozleche.html" },
+                        { titulo: "Torta de Naranja", img: "f44336", link: "recetas/torta.html" }
+                    ];
+                
+                    recetas.forEach((receta, index) => {
+                        const numero = index + 1;
+                        document.write(`
+                            <div class="col-md-4 mb-4">
+                                <div class="card">
+                                    <img src="https://dummyimage.com/400x300/${receta.img}/fff&text=${receta.titulo.replace(/ /g, "+")}" class="card-img-top" alt="${receta.titulo}">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">${numero}. ${receta.titulo}</h5>
+                                        <p class="card-text">Receta #${numero}: descubre cómo preparar ${receta.titulo.toLowerCase()} de manera sencilla.</p>
+                                        <a href="${receta.link}" class="btn btn-warning">Ver receta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        `);
+                    });
+                </script>                
+            </div>
+        </div>
+    </section>
+    <small class="d-block text-center py-5">© Jorge Daza</small>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
