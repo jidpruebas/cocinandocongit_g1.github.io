@@ -1,4 +1,5 @@
 ## URL pública del proyecto: https://jidpruebas.github.io/cocinandocongit_g1.github.io/
+## Guía de comandos de Git: https://github.com/jidpruebas/comandos-git/blob/main/comandos-git.md
 
 ## Objetivo
 
